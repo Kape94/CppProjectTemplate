@@ -4,7 +4,7 @@ cd vcpkg
 
 call bootstrap-vcpkg.bat
 
-# install the packages for you project
-# ex: vcpkg install glfw3
+REM install the packages for you project
+REM ex: vcpkg install glfw3
 
 pause
