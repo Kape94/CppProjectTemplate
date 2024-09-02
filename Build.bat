@@ -1,4 +1,9 @@
-SET CMAKE=vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/bin/cmake.exe
+SET CMAKE=""
+
+for /f "delims=" %%i in ('dir /s /b cmake.exe 2^>nul') do (
+    SET CMAKE=%%i
+)
+
 SET VCPKG_TOOLCHAIN=vcpkg/scripts/buildsystems/vcpkg.cmake
 
 mkdir BUILD
