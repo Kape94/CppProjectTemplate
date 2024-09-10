@@ -1,6 +1,8 @@
 @echo off
 setlocal
 
+cd ..
+
 :: 1) Setup vcpkg 
 git clone https://github.com/Microsoft/vcpkg.git
 
